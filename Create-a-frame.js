@@ -28,3 +28,6 @@ Output:
   + frame  +
   ++++++++++
 */
+
+
+// Solution
