@@ -46,3 +46,5 @@ const frame = (text, char) => {
     f += l + s + " ".repeat(maxlen - s.length) + r;
   return f + ln;
 };
+
+// or
