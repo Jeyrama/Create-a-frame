@@ -31,3 +31,18 @@ Output:
 
 
 // Solution
+
+const frame = (text, char) => {
+  const r = " " + char + "\n";
+  const l = char + " ";
+  let f, ln;
+  let maxlen = 0;
+  for (const s of text)
+    if (s.length > maxlen)
+      maxlen = s.length;
+  ln = char.repeat(maxlen+4);
+  f = ln + "\n";
+  for (const s of text)
+    f += l + s + " ".repeat(maxlen - s.length) + r;
+  return f + ln;
+};
